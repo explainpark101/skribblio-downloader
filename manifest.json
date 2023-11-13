@@ -1,0 +1,14 @@
+{
+  "name": "skribbl downloader",
+  "version": "1",
+  "description": "https://skribbl.io/ 그림 다운로더",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://skribbl.io/*"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "js": ["new.js"]
+    }
+  ]
+}
